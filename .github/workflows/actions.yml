@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     -  name: get code
-       run: open index.html
+       uses: actions/checkout@v4
+    -  name: run code
+       run:  open index.html
